@@ -1,0 +1,58 @@
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div class="body" xmlns="http://www.w3.org/1999/xhtml">
+			<style>
+				.body{
+					align-items: center;
+					background-color: #cccccc;
+					display: flex;
+					height: 300px;
+					justify-content: center;
+					overflow:hidden;
+					position: relative;
+					width: 600px;
+				}
+
+				.card {
+					height: 175px;
+					overflow: hidden;
+					position: relative;
+					width: 125px;
+				}
+
+				.card > * {
+					align-items: center;
+					border-radius: 5px;
+					box-sizing: border-box;
+					display: flex;
+					font-size: 48px;
+					height: 100%;
+					justify-content: center;
+					left: 0;
+					position: absolute;
+					top: 0;
+					width: 100%;
+				}
+
+				.card:active > .back {
+					display: none;
+				}
+
+				.back {
+					background: #aa0000;
+					border: 5px solid black;
+					z-index: 1;
+				}
+
+				.face {
+					background: #ffffff;
+				}
+			</style>
+
+			<div class="card">
+				<div class="face">A<br />♠</div>
+				<div class="back"></div>
+			</div>
+		</div>
+	</foreignObject>
+</svg>

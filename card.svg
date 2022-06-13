@@ -4,7 +4,7 @@
 			<style>
 				.body{
 					align-items: center;
-					background-color: #cccccc;
+					background-color: #ffffff;
 					display: flex;
 					height: 300px;
 					justify-content: center;
@@ -15,7 +15,6 @@
 
 				.card {
 					height: 175px;
-					overflow: hidden;
 					position: relative;
 					width: 125px;
 				}
@@ -34,18 +33,31 @@
 					width: 100%;
 				}
 
-				.card:active > .back {
-					display: none;
-				}
-
 				.back {
-					background: #aa0000;
+					animation: flip-back 5s infinite;
+					animation-timing-function: steps(1);
+					background: #992200;
 					border: 5px solid black;
 					z-index: 1;
 				}
 
 				.face {
 					background: #ffffff;
+					border: 1px solid #999999;
+				}
+
+				@keyframes flip-back {
+					0% {
+						opacity: 1;
+					}
+
+					80% {
+						opacity: 0;
+					}
+
+					100% {
+						opacity: 1;
+					}
 				}
 			</style>
 
